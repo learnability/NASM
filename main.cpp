@@ -25,7 +25,7 @@ bool operand_check(char op)
 
 }*/
 
-int operation(char op, int a, int b)
+float operation(char op, int a, int b)
 {
 	int result;
 	switch(op)
@@ -51,6 +51,7 @@ int operation(char op, int a, int b)
 
 main()
 {
+
 	char operator_ ;
 	int operand_1,operand_2;
 	cout<<"Enter the operator (+ - * / ^)" ; // asks the user to enter the operation + - * / ^
