@@ -1,1 +1,3 @@
-//multiplication function 
+//add 
+//multiplication function
+
