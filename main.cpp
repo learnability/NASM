@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//function to check if an operator is valid
 bool check(char op)
 {
 switch(op)
@@ -19,11 +20,7 @@ default : return false;
 }
 return false;
 }
-/*
-bool operand_check(char op)
-{
 
-}*/
 
 float operation(char op, int a, int b)
 {
