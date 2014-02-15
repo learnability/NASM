@@ -25,9 +25,9 @@ bool operand_check(char op)
 
 }*/
 
-int operation(char op, int a, int b)
+float operation(char op, int a, int b)
 {
-int result;
+float result;
 switch(op)
 {
 case '+':result = a+b;
@@ -53,18 +53,22 @@ main()
 {
 char operator_ ;
 int operand_1,operand_2;
-cout<<"Enter the operator (+ - * / ^)" ; // asks the user to enter the operation + - * / ^
+cout<<"Enter the operator (+ - * / ^ l %)" ; // asks the user to enter the operation + - * / ^
 cin>>operator_;
 //check if operator is valid
 if(!(check(operator_)))
 cout<<"Invalid operator";
 else
 {
+
 cout<<"Enter operand 1 \n";
 cin>>operand_1;
+if(operator_!='l')
+{
 cout<<"Enter operand 2\n";
 cin>>operand_2;
-int result;
+}
+float result;
 result = operation(operator_,operand_1,operand_2);
 cout<<"result\n"<<result<<"\n";
 
