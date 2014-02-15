@@ -1,5 +1,6 @@
 #include <iostream>
 #include<stdlib.h>
+#include <math.h> 
 
 using namespace std;
 
@@ -11,6 +12,8 @@ case '+': return true;
 case '-':return true;
 case '*':return true;
 case '/':return true;
+case 'l':return true;
+case '%':return true;
 default : return false;
 }
 return false;
@@ -33,6 +36,10 @@ break;
 case '*':result = a*b;
 break;
 case '/':result = a/b;
+break;
+case '%':result = a%b;
+break;
+case 'l':result = log(a) ;
 break;
 
 }
