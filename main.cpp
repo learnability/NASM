@@ -24,7 +24,7 @@ bool check(char op)
 
 float operation(char op, int a, int b)
 {
-	int result;
+	float result;
 	switch(op)
 	{
 		case '+':result = a+b;
@@ -60,9 +60,12 @@ main()
 	{
 		cout<<"Enter operand 1 \n";
 		cin>>operand_1;
+		if(operator_!='l')
+		{
 		cout<<"Enter operand 2\n";
 		cin>>operand_2;
-		int result;
+		}
+		float result;
 		result = operation(operator_,operand_1,operand_2);
 		cout<<"result\n"<<result<<"\n";
 	
